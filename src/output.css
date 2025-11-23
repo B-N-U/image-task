@@ -501,6 +501,12 @@
   .gap-y-3 {
     row-gap: calc(var(--spacing) * 3);
   }
+  .gap-y-5 {
+    row-gap: calc(var(--spacing) * 5);
+  }
+  .gap-y-9 {
+    row-gap: calc(var(--spacing) * 9);
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
