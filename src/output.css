@@ -180,6 +180,15 @@
   }
 }
 @layer utilities {
+  .fixed {
+    position: fixed;
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -210,6 +219,9 @@
   .m-3\.5 {
     margin: calc(var(--spacing) * 3.5);
   }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
@@ -227,6 +239,12 @@
   }
   .m-40 {
     margin: calc(var(--spacing) * 40);
+  }
+  .m-\[40\] {
+    margin: 40;
+  }
+  .m-\[40px\] {
+    margin: 40px;
   }
   .mx-3 {
     margin-inline: calc(var(--spacing) * 3);
@@ -480,6 +498,9 @@
       margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .gap-y-3 {
+    row-gap: calc(var(--spacing) * 3);
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -561,11 +582,38 @@
   .p-510 {
     padding: calc(var(--spacing) * 510);
   }
+  .p-\[40px\] {
+    padding: 40px;
+  }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
+  }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
+  }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
+  .px-14 {
+    padding-inline: calc(var(--spacing) * 14);
+  }
+  .px-16 {
+    padding-inline: calc(var(--spacing) * 16);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
   }
   .py-0 {
     padding-block: calc(var(--spacing) * 0);
@@ -576,8 +624,17 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
+  }
+  .pr-16 {
+    padding-right: calc(var(--spacing) * 16);
   }
   .align-bottom {
     vertical-align: bottom;
@@ -597,6 +654,9 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[24px\] {
+    font-size: 24px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
